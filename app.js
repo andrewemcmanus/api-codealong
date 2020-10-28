@@ -1,5 +1,9 @@
 
 // const container = document.querySelector('');
+document.getElementById.apply('submit-button').addEventListener 
+('click', function)
+
+// to clear the page: a conditional?
 
 function appendBookToDom (title, author, cover) {
     const titleH1 = document.createElement('h3');
@@ -50,4 +54,4 @@ function getCoverId(books) {
 }
 
 let genre = 'love';
-fetchBook(genre);
+// fetchBook(genre);
