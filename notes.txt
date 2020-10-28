@@ -1,0 +1,32 @@
+link our files
+build the HTML and the input
+
+access the library API
+	hardcode the category first
+	https://openlibrary.org/dev/docs/api/subjects/ 
+
+
+look at it in Postman: http://openlibrary.org/subjects/mystery.json
+	dig out the cover, title and author
+	create the fetch
+		write a function that takes in a string, and runs the API request
+
+wire the input later
+1. build the HTML
+
+
+function that returns the random book:
+	is ebooks_count the real count? if so, use it
+	use works.length as the max in our random function
+	Math.floor(Math.random * works.length)
+	access at: works[randomIndex]
+
+present the info from the API on the DOM
+	fields we need: cover image, author, title
+	build helper function to generate the elements, then append them
+
+wire up the input:
+	add an eventListener to the button
+	grab the input via a querySelector and get its text
+	pass this into the search
+	
